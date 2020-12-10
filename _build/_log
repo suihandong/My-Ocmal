@@ -1,0 +1,20 @@
+### Starting build.
+# Target: hwk_07.ml.depends, tags: { extension:ml, file:hwk_07.ml, ocaml, ocamldep, quiet }
+/Users/suihandong/.opam/4.07.1/bin/ocamldep.opt -modules hwk_07.ml > hwk_07.ml.depends # cached
+# Target: hwk_06.ml.depends, tags: { extension:ml, file:hwk_06.ml, ocaml, ocamldep, quiet }
+/Users/suihandong/.opam/4.07.1/bin/ocamldep.opt -modules hwk_06.ml > hwk_06.ml.depends
+# Target: streams.ml.depends, tags: { extension:ml, file:streams.ml, ocaml, ocamldep, quiet }
+/Users/suihandong/.opam/4.07.1/bin/ocamldep.opt -modules streams.ml > streams.ml.depends # cached
+# Target: lazee.ml.depends, tags: { extension:ml, file:lazee.ml, ocaml, ocamldep, quiet }
+/Users/suihandong/.opam/4.07.1/bin/ocamldep.opt -modules lazee.ml > lazee.ml.depends # cached
+# Target: lazee.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:lazee.cmo, file:lazee.ml, implem, ocaml, quiet }
+/Users/suihandong/.opam/4.07.1/bin/ocamlc.opt -c -o lazee.cmo lazee.ml # cached
+# Target: streams.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:streams.cmo, file:streams.ml, implem, ocaml, quiet }
+/Users/suihandong/.opam/4.07.1/bin/ocamlc.opt -c -o streams.cmo streams.ml # cached
+# Target: hwk_06.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hwk_06.cmo, file:hwk_06.ml, implem, ocaml, quiet }
+/Users/suihandong/.opam/4.07.1/bin/ocamlc.opt -c -o hwk_06.cmo hwk_06.ml
+# Target: hwk_07.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:hwk_07.cmo, file:hwk_07.ml, implem, ocaml, quiet }
+/Users/suihandong/.opam/4.07.1/bin/ocamlc.opt -c -o hwk_07.cmo hwk_07.ml
+# Target: hwk_07.byte, tags: { byte, dont_link_with, extension:byte, file:hwk_07.byte, link, ocaml, program, quiet }
+/Users/suihandong/.opam/4.07.1/bin/ocamlc.opt lazee.cmo streams.cmo hwk_06.cmo hwk_07.cmo -o hwk_07.byte
+# Compilation successful.
